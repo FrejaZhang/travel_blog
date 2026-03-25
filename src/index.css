@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #FFF7F0;
+    color: #5B5563;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', 'Noto Sans SC', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Baloo 2', 'Noto Sans SC', sans-serif;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #FF8FB1, #FF6B9D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 12px 40px rgba(255, 143, 177, 0.25);
+  }
+}
